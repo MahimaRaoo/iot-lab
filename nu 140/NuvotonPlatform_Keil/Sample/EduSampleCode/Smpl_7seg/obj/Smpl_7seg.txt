@@ -1,0 +1,255 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: .\obj\Smpl_7seg.axf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x000000c1
+    Flags: EF_ARM_HASENTRY (0x05000002)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Built with
+    ARM C/C++ Compiler, 4.1 [Build 894]
+    ARM Assembler, 4.1 [Build 894]
+    ARM Linker, 4.1 [Build 894] 
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 14
+
+    Program header offset: 8864 (0x000022a0)
+    Section header offset: 8896 (0x000022c0)
+
+    Section header string table index: 13
+
+========================================================================
+
+** Program header #0 (PT_LOAD) [PF_X + PF_W + PF_R + PF_ARM_ENTRY]
+    Size : 1344 bytes (320 bytes in file)
+    Virtual address: 0x00000000 (Alignment 8)
+
+
+========================================================================
+
+** Section #1 'ER_RO' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 320 bytes (alignment 4)
+    Address: 0x00000000
+
+    $d.realdata
+    RESET
+    __Vectors
+        0x00000000:    20000400    ...     DCD    536871936
+        0x00000004:    000000c1    ....    DCD    193
+        0x00000008:    000000e1    ....    DCD    225
+        0x0000000c:    000000e3    ....    DCD    227
+        0x00000010:    00000000    ....    DCD    0
+        0x00000014:    00000000    ....    DCD    0
+        0x00000018:    00000000    ....    DCD    0
+        0x0000001c:    00000000    ....    DCD    0
+        0x00000020:    00000000    ....    DCD    0
+        0x00000024:    00000000    ....    DCD    0
+        0x00000028:    00000000    ....    DCD    0
+        0x0000002c:    000000e5    ....    DCD    229
+        0x00000030:    00000000    ....    DCD    0
+        0x00000034:    00000000    ....    DCD    0
+        0x00000038:    000000e7    ....    DCD    231
+        0x0000003c:    000000e9    ....    DCD    233
+        0x00000040:    000000eb    ....    DCD    235
+        0x00000044:    000000eb    ....    DCD    235
+        0x00000048:    000000eb    ....    DCD    235
+        0x0000004c:    000000eb    ....    DCD    235
+        0x00000050:    000000eb    ....    DCD    235
+        0x00000054:    000000eb    ....    DCD    235
+        0x00000058:    000000eb    ....    DCD    235
+        0x0000005c:    000000eb    ....    DCD    235
+        0x00000060:    000000eb    ....    DCD    235
+        0x00000064:    000000eb    ....    DCD    235
+        0x00000068:    000000eb    ....    DCD    235
+        0x0000006c:    000000eb    ....    DCD    235
+        0x00000070:    000000eb    ....    DCD    235
+        0x00000074:    000000eb    ....    DCD    235
+        0x00000078:    000000eb    ....    DCD    235
+        0x0000007c:    000000eb    ....    DCD    235
+        0x00000080:    000000eb    ....    DCD    235
+        0x00000084:    000000eb    ....    DCD    235
+        0x00000088:    000000eb    ....    DCD    235
+        0x0000008c:    000000eb    ....    DCD    235
+        0x00000090:    000000eb    ....    DCD    235
+        0x00000094:    000000eb    ....    DCD    235
+        0x00000098:    000000eb    ....    DCD    235
+        0x0000009c:    000000eb    ....    DCD    235
+        0x000000a0:    000000eb    ....    DCD    235
+        0x000000a4:    000000eb    ....    DCD    235
+        0x000000a8:    000000eb    ....    DCD    235
+        0x000000ac:    000000eb    ....    DCD    235
+        0x000000b0:    000000eb    ....    DCD    235
+        0x000000b4:    000000eb    ....    DCD    235
+        0x000000b8:    000000eb    ....    DCD    235
+        0x000000bc:    000000eb    ....    DCD    235
+    $t
+    .text
+    Reset_Handler
+        0x000000c0:    480d        .H      LDR      r0,[pc,#52] ; [0xf8] = 0x50000100
+        0x000000c2:    490e        .I      LDR      r1,[pc,#56] ; [0xfc] = 0x59
+        0x000000c4:    6001        .`      STR      r1,[r0,#0]
+        0x000000c6:    490e        .I      LDR      r1,[pc,#56] ; [0x100] = 0x16
+        0x000000c8:    6001        .`      STR      r1,[r0,#0]
+        0x000000ca:    490e        .I      LDR      r1,[pc,#56] ; [0x104] = 0x88
+        0x000000cc:    6001        .`      STR      r1,[r0,#0]
+        0x000000ce:    4a0e        .J      LDR      r2,[pc,#56] ; [0x108] = 0x50000024
+        0x000000d0:    490e        .I      LDR      r1,[pc,#56] ; [0x10c] = 0x5aa5
+        0x000000d2:    6011        .`      STR      r1,[r2,#0]
+        0x000000d4:    2100        .!      MOVS     r1,#0
+        0x000000d6:    6001        .`      STR      r1,[r0,#0]
+        0x000000d8:    480d        .H      LDR      r0,[pc,#52] ; [0x110] = 0x13f
+        0x000000da:    4780        .G      BLX      r0
+        0x000000dc:    480d        .H      LDR      r0,[pc,#52] ; [0x114] = 0x125
+        0x000000de:    4700        .G      BX       r0
+    NMI_Handler
+        0x000000e0:    e7fe        ..      B        NMI_Handler ; 0xe0
+    HardFault_Handler
+        0x000000e2:    e7fe        ..      B        HardFault_Handler ; 0xe2
+    SVC_Handler
+        0x000000e4:    e7fe        ..      B        SVC_Handler ; 0xe4
+    PendSV_Handler
+        0x000000e6:    e7fe        ..      B        PendSV_Handler ; 0xe6
+    SysTick_Handler
+        0x000000e8:    e7fe        ..      B        SysTick_Handler ; 0xe8
+    Default_Handler
+    ACMP_IRQHandler
+    ADC_IRQHandler
+    BOD_IRQHandler
+    CAN0_IRQHandler
+    EINT0_IRQHandler
+    EINT1_IRQHandler
+    GPAB_IRQHandler
+    GPCDE_IRQHandler
+    I2C0_IRQHandler
+    I2C1_IRQHandler
+    I2S_IRQHandler
+    PDMA_IRQHandler
+    PS2_IRQHandler
+    PWMA_IRQHandler
+    PWMB_IRQHandler
+    PWRWU_IRQHandler
+    RTC_IRQHandler
+    SPI0_IRQHandler
+    SPI1_IRQHandler
+    SPI2_IRQHandler
+    SPI3_IRQHandler
+    TMR0_IRQHandler
+    TMR1_IRQHandler
+    TMR2_IRQHandler
+    TMR3_IRQHandler
+    UART02_IRQHandler
+    UART1_IRQHandler
+    USBD_IRQHandler
+    WDT_IRQHandler
+        0x000000ea:    e7fe        ..      B        Default_Handler ; 0xea
+    __user_initial_stackheap
+        0x000000ec:    480a        .H      LDR      r0,[pc,#40] ; [0x118] = 0x20000000
+        0x000000ee:    490b        .I      LDR      r1,[pc,#44] ; [0x11c] = 0x20000400
+        0x000000f0:    4a09        .J      LDR      r2,[pc,#36] ; [0x118] = 0x20000000
+        0x000000f2:    4b0b        .K      LDR      r3,[pc,#44] ; [0x120] = 0x20000000
+        0x000000f4:    4770        pG      BX       lr
+    $d
+        0x000000f6:    0000        ..      DCW    0
+        0x000000f8:    50000100    ...P    DCD    1342177536
+        0x000000fc:    00000059    Y...    DCD    89
+        0x00000100:    00000016    ....    DCD    22
+        0x00000104:    00000088    ....    DCD    136
+        0x00000108:    50000024    $..P    DCD    1342177316
+        0x0000010c:    00005aa5    .Z..    DCD    23205
+        0x00000110:    0000013f    ?...    DCD    319
+        0x00000114:    00000125    %...    DCD    293
+        0x00000118:    20000000    ...     DCD    536870912
+        0x0000011c:    20000400    ...     DCD    536871936
+        0x00000120:    20000000    ...     DCD    536870912
+    $t
+    .text
+    _main
+        0x00000124:    4802        .H      LDR      r0,[pc,#8] ; [0x130] = 0xf631024c
+        0x00000126:    4903        .I      LDR      r1,[pc,#12] ; [0x134] = 0x17539abd
+        0x00000128:    4048        H@      EORS     r0,r0,r1
+        0x0000012a:    4041        A@      EORS     r1,r1,r0
+        0x0000012c:    4048        H@      EORS     r0,r0,r1
+        0x0000012e:    e7fe        ..      B        0x12e ; _main + 10
+    $d
+        0x00000130:    f631024c    L.1.    DCD    4130406988
+        0x00000134:    17539abd    ..S.    DCD    391355069
+    $t
+    .text
+    __use_two_region_memory
+        0x00000138:    4770        pG      BX       lr
+    __rt_heap_escrow$2region
+        0x0000013a:    4770        pG      BX       lr
+    __rt_heap_expand$2region
+        0x0000013c:    4770        pG      BX       lr
+    i.SystemInit
+    SystemInit
+        0x0000013e:    4770        pG      BX       lr
+
+** Section #2 'ER_ZI' (SHT_NOBITS) [SHF_ALLOC + SHF_WRITE]
+    Size   : 1024 bytes (alignment 8)
+    Address: 0x20000000
+
+
+** Section #3 '.debug_abbrev' (SHT_PROGBITS)
+    Size   : 1476 bytes
+
+
+** Section #4 '.debug_frame' (SHT_PROGBITS)
+    Size   : 360 bytes
+
+
+** Section #5 '.debug_info' (SHT_PROGBITS)
+    Size   : 864 bytes
+
+
+** Section #6 '.debug_line' (SHT_PROGBITS)
+    Size   : 348 bytes
+
+
+** Section #7 '.debug_loc' (SHT_PROGBITS)
+    Size   : 20 bytes
+
+
+** Section #8 '.debug_pubnames' (SHT_PROGBITS)
+    Size   : 33 bytes
+
+
+** Section #9 '.symtab' (SHT_SYMTAB)
+    Size   : 1488 bytes (alignment 4)
+    String table #10 '.strtab'
+    Last local symbol no. 49
+
+
+** Section #10 '.strtab' (SHT_STRTAB)
+    Size   : 1288 bytes
+
+
+** Section #11 '.note' (SHT_NOTE)
+    Size   : 24 bytes (alignment 4)
+
+
+** Section #12 '.comment' (SHT_PROGBITS)
+    Size   : 2448 bytes
+
+
+** Section #13 '.shstrtab' (SHT_STRTAB)
+    Size   : 140 bytes
+
+

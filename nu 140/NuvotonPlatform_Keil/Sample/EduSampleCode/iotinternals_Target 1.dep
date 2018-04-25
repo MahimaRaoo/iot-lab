@@ -1,0 +1,4 @@
+Dependencies for Project 'iotinternals', Target 'Target 1': (DO NOT MODIFY !)
+F (.\startup_NUC1xx.s)(0x4F5858F2)(--cpu Cortex-M0 --pd "__EVAL SETA 1" -g --apcs=interwork -I C:\ARM\RV31\Inc -I C:\ARM\CMSIS\Include -I C:\ARM\Inc\Nuvoton\NUC1xx --list "startup_NUC1xx.lst" --xref -o "startup_NUC1xx.o" --depend "startup_NUC1xx.d")
+F (.\q1.c)(0x5ADF529A)()
+F (..\Driver\Smpl_DrvGPIO\Smpl_DrvGPIO.c)(0x4F61B9F4)()

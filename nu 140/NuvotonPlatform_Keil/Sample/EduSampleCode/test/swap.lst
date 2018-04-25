@@ -1,0 +1,61 @@
+
+
+
+ARM Macro Assembler    Page 1 
+
+
+    1 00000000                 PRESERVE8                    ; Indicate the code
+                                                             here preserve  
+    2 00000000         ; 8 byte stack alignment         
+    3 00000000                 THUMB                        ; Indicate THUMB co
+                                                            de is used       
+    4 00000000                 AREA             |.text|, CODE, READONLY
+    5 00000000         
+    6 00000000                 EXPORT           main
+    7 00000000         ; Start of CODE area 
+    8 00000000         main
+    9 00000000 4802            LDR              R0,=0XF631024C
+   10 00000002 4903            LDR              R1,=0X17539ABD
+   11 00000004 4048            EORS             R0,R0,R1    ;R0^R1
+   12 00000006 4041            EORS             R1,R0,R1    ;R1^R0
+   13 00000008 4048            EORS             R0,R0,R1    ;R0^R1
+   14 0000000A         
+   15 0000000A E7FE    stop    B                stop        ;stop program
+   16 0000000C                 END
+              F631024C 
+              17539ABD 
+Command Line: --debug --xref --cpu=Cortex-M0 --apcs=interwork --depend=swap.d -
+oswap.o -IC:\Keil\ARM\RV31\Inc -IC:\Keil\ARM\CMSIS\Include -IC:\Keil\ARM\Inc\Nu
+voton\NUC1xx --predefine="__EVAL SETA 1" --list=swap.lst swap.asm
+
+
+
+ARM Macro Assembler    Page 1 Alphabetic symbol ordering
+Relocatable symbols
+
+.text 00000000
+
+Symbol: .text
+   Definitions
+      At line 4 in file swap.asm
+   Uses
+      None
+Comment: .text unused
+main 00000000
+
+Symbol: main
+   Definitions
+      At line 8 in file swap.asm
+   Uses
+      At line 6 in file swap.asm
+Comment: main used once
+stop 0000000A
+
+Symbol: stop
+   Definitions
+      At line 15 in file swap.asm
+   Uses
+      At line 15 in file swap.asm
+Comment: stop used once
+3 symbols
+336 symbols in table

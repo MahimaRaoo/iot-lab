@@ -1,0 +1,21 @@
+*** Creating Trace Output File 'abc.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"startup_nuc1xx.o"'
+### List of Objects: adding '"core_cm0.o"'
+### List of Objects: adding '"system_nuc1xx.o"'
+### List of Objects: adding '"swap.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M0 "startup_nuc1xx.o" "core_cm0.o" "system_nuc1xx.o" "swap.o" --ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list ".\abc.map" -o "abc.axf"### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: 'abc.axf'
+### ADS-LD Command File: 'abc.lnp'
+### Checking for dirty Components...
+### Creating CmdFile 'abc.lnp', Handle=0x00000580
+### Writing '.lnp' file
+### ADS-LD Command file 'abc.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.
